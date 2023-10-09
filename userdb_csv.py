@@ -30,3 +30,7 @@ def read_csv_noheader(filename):
                 'lastname': lastname,
                 'birth': birth,
             }
+
+def print_user(user):
+    print(f'ID:{user["id"]}, Firstname:{user["firstname"]}, Lastname:{user["lastname"]}, Date of birth: {user["birth"]}')
+    

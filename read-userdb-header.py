@@ -1,7 +1,5 @@
 import sys
-
 import userdb_csv
 
-user_records = userdb_csv.read_csv_header(sys.argv[1])
-for user in user_records:
-    print(userdb_csv.format_user(user))
+for record in userdb_csv.read_csv_header(sys.argv[1]):
+    print(f'ID:{record["id"]}, Firstname:{record["firstname"]}, Lastname:{record["lastname"]}, Date of birth: {record["birth"]}')
